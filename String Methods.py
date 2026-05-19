@@ -115,3 +115,181 @@ Traceback (most recent call last):
   File "<pyshell#71>", line 1, in <module>
     strip(x)
 NameError: name 'strip' is not defined
+
+
+a="hello"
+a.upper()
+'HELLO'
+a.lower()
+'hello'
+
+b="python course"
+b.capitalize()
+'Python course'
+
+b.title()
+'Python Course'
+b
+'python course'
+
+b.upper(0)
+Traceback (most recent call last):
+  File "<pyshell#10>", line 1, in <module>
+    b.upper(0)
+TypeError: str.upper() takes no arguments (1 given)
+b.upper("p")
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    b.upper("p")
+TypeError: str.upper() takes no arguments (1 given)
+
+
+
+a="code"
+a.isupper()
+False
+a.islower()
+True
+
+a.isalpha()
+True
+a.isalphanum()
+Traceback (most recent call last):
+  File "<pyshell#20>", line 1, in <module>
+    a.isalphanum()
+AttributeError: 'str' object has no attribute 'isalphanum'. Did you mean: 'isalnum'?
+a.isalnum()
+True
+
+a.startswith("c")
+True
+
+a.endswith("e")
+True
+
+b=12345
+b.isnum()
+Traceback (most recent call last):
+  File "<pyshell#28>", line 1, in <module>
+    b.isnum()
+AttributeError: 'int' object has no attribute 'isnum'
+c="12345"
+c.isnum()
+Traceback (most recent call last):
+  File "<pyshell#30>", line 1, in <module>
+    c.isnum()
+AttributeError: 'str' object has no attribute 'isnum'. Did you mean: 'isalnum'?
+c.isdigit()
+True
+b.isdigit()
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    b.isdigit()
+AttributeError: 'int' object has no attribute 'isdigit'
+
+d="Hey@123"
+d.isapha()
+Traceback (most recent call last):
+  File "<pyshell#35>", line 1, in <module>
+    d.isapha()
+AttributeError: 'str' object has no attribute 'isapha'. Did you mean: 'isalpha'?
+d.isalpha()
+False
+
+
+
+
+#split --
+a="python c c++ java"
+a.split()
+['python', 'c', 'c++', 'java']
+
+b="i am learning python"
+b.split()
+['i', 'am', 'learning', 'python']
+
+
+#merge()
+#join()
+
+a="vja","hyd",vzg"
+SyntaxError: unterminated string literal (detected at line 1)
+a="vja","hyd","vzg"
+type(a)
+<class 'tuple'>
+a
+('vja', 'hyd', 'vzg')
+
+"".join(a)
+'vjahydvzg'
+" ".join(a)
+'vja hyd vzg'
+a
+('vja', 'hyd', 'vzg')
+
+#concatenation
+
+a="python"
+b="course"
+print(a+b)
+pythoncourse
+print(a+" "+b)
+python course
+
+fname="Subhani"
+lanme="Shaik"
+lname="shaik"
+print(fname+lname)
+Subhanishaik
+print(fname +" "+lname)
+Subhani shaik
+
+print(fname.title()+" " +lname.title())
+Subhani Shaik
+print((fname+" "+lname).title())
+Subhani Shaik
+
+
+
+#formating
+a,b=2,7
+a+b
+9
+print("The sum is",a+b)
+The sum is 9
+print("The sum is ,a+b")
+The sum is ,a+b
+
+a="city"
+print("people lives in",a)
+people lives in city
+>>> print("the city is "a)
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> 
+>>> a="channu"
+>>> b="munnu"
+>>> 
+>>> print("hello {}{}".format(a,b))
+hello channumunnu
+>>> print("hello {} {}".format(a,b))
+hello channu munnu
+>>> print("hello {} hello {}".format(a,b))
+hello channu hello munnu
+>>> print("hello { }".format(a))
+Traceback (most recent call last):
+  File "<pyshell#95>", line 1, in <module>
+    print("hello { }".format(a))
+KeyError: ' '
+>>> print("hello {}".format(a))
+hello channu
+>>> 
+...  
+>>> #fstring()
+>>> a="subbu"
+>>> b="jillu"
+>>> print(f"hello {a}{b}")
+hello subbujillu
+>>> print(f"hello {a} {b}")
+hello subbu jillu
+>>> print(f"hello {a} bye {b}")
+hello subbu bye jillu
