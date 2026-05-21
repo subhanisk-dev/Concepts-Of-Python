@@ -69,8 +69,6 @@ b
 
 #only after calling it displays the changed values
 
-
-
 #Comparioson Operators
 
 a=4
@@ -143,7 +141,6 @@ True
 
 
 #Identify Operatords
-
 a=9
 if type(a) is int:
     print("It is Int")
@@ -170,7 +167,6 @@ if b is "India":
 
     
 India
-
 
 #Membership Operators
 
