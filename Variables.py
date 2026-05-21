@@ -1,5 +1,6 @@
 Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license()" for more information.
+  
 #do not start with a keyword
 a0123=45
 print(a0123)
@@ -8,7 +9,9 @@ if=70
 SyntaxError: invalid syntax
 while=1
 SyntaxError: invalid syntax
+
 #we can use string as variable name
+
 city="Vij"
 print(city)
 Vij
@@ -23,7 +26,9 @@ SyntaxError: invalid decimal literal
 a0=1
 print(a0)
 1
+
 #at a time usage of 2 variables
+
 fname="subbu"
 lname="shaik"
 print(fname+lname)
@@ -35,6 +40,7 @@ subbu shaik
 
 
 #passing of 2 variable sata time
+
 a=1,b=2
 SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
 a=1;b=2
@@ -59,8 +65,10 @@ Traceback (most recent call last):
 TypeError: cannot unpack non-iterable int object
 >>> 
 >>> 
->>> #unpacking variiable
->>> a,b,c=(5,6,7)
+
+  >>> #unpacking variiable
+
+  >>> a,b,c=(5,6,7)
 >>> print(a,b,c)
 5 6 7
 >>> 
